@@ -19,3 +19,6 @@ spring.jpa.hibernate.ddl-auto=update
 ```
 5. Add business logic
 6. Add repositories (DB-Logic)
+7. Add controller (Rest-Endpoints). Tests:
+   1. `curl -X POST localhost:8080/cars/new -H "Content-type:application/json" -d "{\"brand\":\"Audi\",\"model\":\"A3\",\"year\":2025}"`
+   2. `curl localhost:8080/cars/all`
