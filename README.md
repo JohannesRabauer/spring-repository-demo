@@ -17,4 +17,5 @@ spring.datasource.password: not-secure
 spring.datasource.driver-class-name: org.postgresql.Driver
 spring.jpa.hibernate.ddl-auto=update
 ```
-5. Add business logic / repositories
+5. Add business logic
+6. Add repositories (DB-Logic)
