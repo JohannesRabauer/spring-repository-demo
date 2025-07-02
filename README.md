@@ -9,3 +9,11 @@
      <artifactId>postgresql</artifactId>
 </dependency>
 ```
+4. Configure access in [application.properties](./src/main/resources/application.properties):
+```properties
+spring.datasource.url: jdbc:postgresql://localhost:15432/rabauer-db
+spring.datasource.username: dev
+spring.datasource.password: not-secure
+spring.datasource.driver-class-name: org.postgresql.Driver
+spring.jpa.hibernate.ddl-auto=update
+```
