@@ -22,3 +22,11 @@ spring.jpa.hibernate.ddl-auto=update
 7. Add controller (Rest-Endpoints). Tests:
    1. `curl -X POST localhost:8080/cars/new -H "Content-type:application/json" -d "{\"brand\":\"Audi\",\"model\":\"A3\",\"year\":2025}"`
    2. `curl localhost:8080/cars/all`
+8. Add springdoc-openapi dependency to [pom.xml](./pom.xml). Then swagger UI is accessible through http://localhost:8080/swagger-ui/index.html
+```xml
+<dependency>
+     <groupId>org.springdoc</groupId>
+     <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+     <version>2.8.9</version>
+</dependency>
+```
