@@ -38,3 +38,4 @@ spring.jpa.hibernate.ddl-auto=update
      <version>2.8.9</version>
 </dependency>
 ```
+9. Add Token Authentification with `spring-boot-starter-security`. API is still testable on http://localhost:8080/swagger-ui/index.html by clicking "Authorize" (with value `supersecrettoken123`) first.
