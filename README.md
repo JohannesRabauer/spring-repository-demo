@@ -1,6 +1,6 @@
 # spring-repository-demo
 
-1. Spring Base Project from [spring initializr](https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.5.0&packaging=jar&jvmVersion=21&groupId=software.xdev&artifactId=spring_repository_demo&name=spring_repository_demo&description=Demo%20project%20for%20Spring%20Boot&packageName=software.xdev.spring_repository_demo&dependencies=web,data-jpa)
+1. Spring Base Project from [spring initializr](https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.5.0&packaging=jar&jvmVersion=21&groupId=com.example&artifactId=demo&name=demo&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.demo&dependencies=data-jpa)
 2. [docker-compose](./docker/docker-compose.yml) (start with `docker compose up` in ./docker)
 3. Add postgresql dependency to [pom.xml](./pom.xml)
 ```xml
@@ -17,8 +17,4 @@ spring.datasource.password: not-secure
 spring.datasource.driver-class-name: org.postgresql.Driver
 spring.jpa.hibernate.ddl-auto=update
 ```
-5. Add business logic
-6. Add repositories (DB-Logic)
-7. Add controller (Rest-Endpoints). Tests:
-   1. `curl -X POST localhost:8080/cars/new -H "Content-type:application/json" -d "{\"brand\":\"Audi\",\"model\":\"A3\",\"year\":2025}"`
-   2. `curl localhost:8080/cars/all`
+5. Add business logic / repositories
